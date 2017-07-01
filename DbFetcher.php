@@ -1,6 +1,6 @@
-<?php
-class DbFetcher
-{
+<php?
+      class DbFetcher
+      {
 	public $host;
 	public $db;
 	public $uname;
@@ -134,4 +134,4 @@ class DbFetcher
 				);
 		return $allInfo;
 	}
-}
+	}
