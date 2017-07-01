@@ -43,6 +43,16 @@ class DbDiffer
 		return $ret;
 	}
 	
+	function arrayIndex($arrData, $keyIndex)
+	{
+		$arrRet = array ();
+		foreach ( $arrData as $arrRow )
+		{
+			$arrRet [$arrRow [$keyIndex]] = $arrRow;
+		}
+		return $arrRet;
+	}	
+	
 	public function diffTable($table1, $table2)
 	{
 		$t1 = arrayIndex($table1, 'Field');
